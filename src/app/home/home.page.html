@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-button slot="end" fill="clear" (click)="Onlogout()">
+      <ion-icon style="color:#fff" name="exit" md="md-exit"></ion-icon>
+    </ion-button>
+    <ion-title>
+      Tienda De Productos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar [(ngModel)]="term" (ionChange)="searchChanged($event)"></ion-searchbar>
+  <ion-item>
+    <ion-label>Búsqueda</ion-label>
+    <ion-select [(ngModel)]="type" (ionChange)="searchChanged($event)">
+      
+    </ion-select>
+  </ion-item>
+
+  <ion-list>
+    
+  </ion-list>
+  
+  
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-footer>
